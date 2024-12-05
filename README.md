@@ -51,7 +51,7 @@ Before you click the "Complete Assessment" button on the Learning Platform, add 
 	-Celebrities from CelebrityList.js
 	-Kids from Kids.js
    
-   After importing the functions the module, a variable called mainContainer is created, selecting the HTML element with the id of container. This element is essentially where we want our final applicationHTML to be located.
+   After importing the functions into the module, a variable called mainContainer is created, selecting the HTML element with the id of container. This element is essentially where we want our final applicationHTML to be located.
    
    The applicationHTML is initialized to build the overall HTML structure  and includes the relevant html opening and closing tags as well as the return values for the Kids(), Celebrities(), and Pairings() functions, dynamically generating the relevant lists for kids, celebrities, and pairings. 
    
