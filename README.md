@@ -40,7 +40,7 @@ Before you click the "Complete Assessment" button on the Learning Platform, add 
    When a user interacts anywhere on the page through a mouse click, the event listener is triggered. In the case of the event listener on the Kids.js module, the event listener once triggered is comparing the data related to the event to see if it meets the dataset type of “child.” If the type does not equal child, no window will be returned. If the type does equal “child”,  the clicked Kid dataset of id (parsed integer) will be compared to each child of children array id. If the id’s match, a window alert is generated that contains the child’s name and wish message.
 
 2. In the **Pairings** module, why must the `findCelebrityMatch()` function be invoked inside the `for..of` loop that iterates the kids array?
-   > Your answer here
+   > Within the Pairings(), the for…of loop is iterating through the array of kids to find each child’s matching celebrity individually. The findCelebrityMatch() must be invoked within the loop because it requires the specific kid as a parameter to run to determine their matching celebrity. If the function was placed outside of the loop, there would be no dynamic matching.
 3. In the **CelebrityList** module, can you describe how the name of the sport that the celebrity plays can be displayed in the window alert text?
    > Your answer here
 4. Can you describe, in detail, the algorithm that is in the `main` module?
