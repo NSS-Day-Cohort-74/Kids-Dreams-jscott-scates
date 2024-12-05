@@ -42,6 +42,17 @@ Before you click the "Complete Assessment" button on the Learning Platform, add 
 2. In the **Pairings** module, why must the `findCelebrityMatch()` function be invoked inside the `for..of` loop that iterates the kids array?
    > Within the Pairings(), the for…of loop is iterating through the array of kids to find each child’s matching celebrity individually. The findCelebrityMatch() must be invoked within the loop because it requires the specific kid as a parameter to run to determine their matching celebrity. If the function was placed outside of the loop, there would be no dynamic matching.
 3. In the **CelebrityList** module, can you describe how the name of the sport that the celebrity plays can be displayed in the window alert text?
-   > Your answer here
+   > Similarly to the Kids.js module event listener, in the CelebrityList.js module, the list tag elements added within the for…of loop to the html variable were modified to include the data tags of data-type “celebrity” and the the celebrity id that are used by the event listener code. 
+   
+   As with the Kids.js event listener, the CelebrityList.js event listener was also waiting for user interaction through the form of a mouse click that would trigger the event listener. In the case of the CelebrityList.js event listener, once triggered it compared the data related to the event to see if it met the dataset type of “celebrity.” If it did not match, no window alert occurred, however if it did match, a for…of loop was executed to iterate through the celebrities array. This allowed us to access all the relevant properties related to the celebrity object such as name and sport. After comparing the celebrity clicked id (parsed integer) to the celebrity id, we were able to return a window alert that contained the celebrity name and sport. 
+
 4. Can you describe, in detail, the algorithm that is in the `main` module?
-   > Your answer here
+   > On the main module, the following functions listed below are responsible for creating specific portions of the applicationHTML content dynamically:  	-Pairings from Pairings.js
+	-Celebrities from CelebrityList.js
+	-Kids from Kids.js
+   
+   After importing the functions the module, a variable called mainContainer is created, selecting the HTML element with the id of container. This element is essentially where we want our final applicationHTML to be located.
+   
+   The applicationHTML is initialized to build the overall HTML structure  and includes the relevant html opening and closing tags as well as the return values for the Kids(), Celebrities(), and Pairings() functions, dynamically generating the relevant lists for kids, celebrities, and pairings. 
+   
+   The last task of the module is to push the applicationHTML variable as innerHTML  for the mainContainer variable which places the content within the container element in index.html.
